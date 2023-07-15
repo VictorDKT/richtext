@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Descendant } from 'slate';
+import RichTextInput from './components/RichTextInput/RichTextInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: "center",
+          marginTop: "50px"
+        }}
+      >
+        <div style={{width: "700px"}}>
+          <RichTextInput
+            onChange={(value: Descendant[])=>{
+              console.log("va", value)
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 }

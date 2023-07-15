@@ -1,0 +1,183 @@
+.href {
+    width: 400px;
+    line-break: anywhere;
+}
+
+.element-image img {
+    width: 100%;
+}
+
+.rich-text-box {
+    border-radius: 7px;
+    padding: 24px 0px 10px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+}
+
+.element-link {
+    display: inline;
+    position: relative;
+  }
+  
+  .element-link .popup {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 10px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+  }
+  
+  .element-link .popup a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 10px;
+    border-right: 1px solid lightgrey;
+  }
+  
+  .element-link .popup button {
+    border: none;
+    background: transparent;
+  }
+  
+  .element-link .popup button:hover {
+    color: rebeccapurple;
+    cursor: pointer;
+  }
+
+.link {
+    color: rgb(30, 157, 216);
+}
+
+.link :hover {
+    text-decoration: underline;
+}
+  
+.button-tooltip {
+    position: absolute;
+    border: 1px solid #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px 0px 1px 2px rgb(0,0,0,0.1);
+}
+
+.tooltip-input {
+    border-radius: 9px;
+    border: 1px solid #aaaaaa;
+    padding-left: 5px;
+    outline: none;
+}
+
+.tooltip-footer {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 3px;
+}
+
+.tooltip-footer-button {
+    border-radius: 8px;
+    color: white;
+    border: none;
+    background-color: #5C697D;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 3px 11px;
+    margin-top: 5px;
+}
+
+.tooltip-footer-button:hover {
+    opacity: 0.7;
+}
+
+.tooltip-header {
+    display: flex;
+    width: calc(100% - 4px);
+    justify-content: space-between;
+    margin-left: -4px;
+    padding: 0px 6px;
+    border-bottom: 1px solid #aeaeae;
+    margin-bottom: 8px;
+}
+
+.tooltip-header-tab-active {
+    border: 1px solid #aeaeae;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #ffffff;
+    background-color: white;
+    width: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.tooltip-header-tab {
+    border: 1px solid #aeaeae;
+    border-bottom: none;
+    padding: 0px 4px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 55px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.tooltip-upload-button {
+    width: 100%;
+    border-radius: 8px;
+    color: #5C697D;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #5C697D;
+    transition: 0.2s;
+}
+
+.tooltip-upload-button:hover {
+    opacity: 0.5;
+}
+
+.blockquote {
+    border-left: 2px solid #ddd;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    color: #aaa;
+    font-style: italic;
+}
+
+.heading-two {
+    font-size: 2em;
+}
+
+.code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 3px;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px !important;
+    line-height: 1;
+}
